@@ -1,0 +1,26 @@
+{
+  "name": "@fx/styles",
+  "version": "0.0.1",
+  "description": "Common styles and style constants for fx",
+  "keywords": [
+    "fx"
+  ],
+  "author": "sreenaths <sree@apache.org>",
+  "homepage": "https://github.com/sreenaths/fx#readme",
+  "license": "MIT",
+  "main": ".",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreenaths/fx.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/sreenaths/fx/issues"
+  },
+  "devDependencies": {}
+}
