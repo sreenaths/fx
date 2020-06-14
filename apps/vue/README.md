@@ -1,0 +1,1 @@
+Demo app in Vue that uses the components. Programmers can use this as a reference.
