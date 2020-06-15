@@ -1,1 +1,1 @@
-Demo app that uses the comonents.
+Demo app in Angular that uses the components. Programmers can use this as a reference.

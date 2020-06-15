@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FxCounter {
+        "values": Array<number>;
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FxCounter {
+        "values"?: Array<number>;
     }
     interface IntrinsicElements {
         "fx-counter": FxCounter;

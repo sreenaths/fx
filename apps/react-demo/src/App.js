@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       Counter Component
-      <fx-counter></fx-counter>
+      <fx-counter values={[1,2,3, 4]}></fx-counter>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'fx-counter',
@@ -6,17 +6,24 @@ import { Component, h, State } from '@stencil/core';
   shadow: true
 })
 export class Counter {
-  @State() value: number = 1;
+  @Prop({ mutable: true }) values: Array<number> = [];
 
   handleChange(factor) {
-    this.value = this.value + factor;
+    if(factor == 1) {
+      this.values = [
+        ...this.values,
+        this.values.length
+      ];
+    } else {
+      this.values = this.values.slice(0, -1);
+    }
   }
 
   render() {
     return (<div>
       <button onClick={() => this.handleChange(1)}>+</button>
-      <input type="text" value={this.value}/>
       <button onClick={() => this.handleChange(-1)}>-</button>
+      {this.values.join(",")}
     </div>);
   }
 }

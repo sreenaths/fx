@@ -1,1 +1,0 @@
-Demo app in React that uses the components. Programmers can use this as a reference.
